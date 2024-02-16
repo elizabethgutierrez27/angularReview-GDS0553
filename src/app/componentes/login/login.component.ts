@@ -4,6 +4,7 @@ import { AuthService } from '../../servicios/auth.service';
 import { response } from 'express';
 import { error } from 'console';
 import { Router } from '@angular/router';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,8 @@ export class LoginComponent {
 
   constructor(private fb: FormBuilder,
     private authService:AuthService,
-    private router:Router){
+    private router:Router,
+    private messageService:MessageService){
 
   }
 
@@ -39,9 +41,14 @@ export class LoginComponent {
         if(response.length>0 && response[0].password==password){
           sessionStorage.setItem("email",email as string)
           this.router.navigate(['home']);
+        } else{
+          this.messageService.add({severity:'error',
+          summary:'Error', detail:'Email o Contraseña Incorrecta'})
         }
       },
       error=>{ 
+        this.messageService.add({severity:'error',
+      summary:'Error', detail:'Email o Contraseña Incorrecta'})
 
       }
     )

@@ -11,6 +11,18 @@
       "fullname": "eliza",
       "email": "elizabeth@gmail.com",
       "password": "eliza12345"
+    },
+    {
+      "id": "da00",
+      "fullname": "Diana",
+      "email": "diana@gmail.com",
+      "password": "123456Eg"
+    },
+    {
+      "id": "3bc2",
+      "fullname": "Diego",
+      "email": "diego@gmail.com",
+      "password": "123456"
     }
   ]
 }
