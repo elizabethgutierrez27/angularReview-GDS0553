@@ -1,4 +1,4 @@
-<form [formGroup]="registerForm">
+<form [formGroup]="registerForm" (ngSubmit)="enviarUsuario()">
     <p-card header="Registrar Mienbro" [style]="{width:'360px'}">
         <div class="field">
             <input type="text" pInputText formControlName="fullname" 
@@ -25,7 +25,7 @@
             <p-password formControlName="confirmPassword" placeholder="Confirmar Contraseña" [toggleMask]="true" styleClass="w-full"></p-password>
         </div>
         
-        <p-button label="Registrar" styleClass="w-full"></p-button>
+        <p-button type="submit" label="Registrar" styleClass="w-full"></p-button>
 
         <div class="mt2">
             ¿Tienes cuenta? <a routerLink="/login">Ingresar</a>
