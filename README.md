@@ -6,12 +6,25 @@ git clone https://github.com/elizabethgutierrez27/angularReview-GDS0553.git
 ```
 
 ## Instalar los módulos
-- Mediante npm instalar los modulos
+- Mediante el siguiente comando ejecutarlo para instalar los modulos
+ ```
+ npm install
+ ```
 
 ## Levantar el Servidor Json-server
-- El FrondEnd lo decodifica y verifica que sea valido.
+- El FrondEnd lo decodifica y verifica que sea valido con el comando siguiente
+```
+json-server --watch db.json
+```
 
 ## Servidor de desarrollo
-- Ejecute ng serve para un servidor de desarrollo. Navegar a http://localhost:4200/
+- Ejecute para un servidor de desarrollo:
+```
+ng serve -o
+```
+- Navegar a
+```
+http://localhost:4200/
+```
 - La aplicación se recargará automáticamente.
 
