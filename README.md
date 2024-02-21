@@ -28,3 +28,6 @@ http://localhost:4200/
 ```
 - La aplicación se recargará automáticamente.
 
+# Evidencia del trabajo realizado
+https://docs.google.com/document/d/1rcWDVg58iZQlCUF6AtDVZqMuRQw5Pp10epkYbto7Qqg/edit?usp=sharing
+
